@@ -114,7 +114,7 @@ bool DecompressBasisToPng(const std::string& strUrl, const std::string &strFolde
 	strCommandLine.reserve(512);
 	strCommandLine = "basisu ";
 	strCommandLine += strBasisFilePath;
-	strCommandLine += " -no_ktx -format_only 9";
+	strCommandLine += " -no_ktx -format_only 1"; /* cTFETC2_RGBA */
 	strCommandLine += " -output_path ";
 	strCommandLine += strFolder;
 	strCommandLine += " -output_file ";
